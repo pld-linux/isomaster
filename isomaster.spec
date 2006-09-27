@@ -11,6 +11,7 @@ Source1:	%{name}.desktop
 URL:		http://littlesvr.ca/isomaster/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	gtk+2-devel
 BuildRequires:	sed >= 4.0
 Requires:	file
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
