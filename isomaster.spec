@@ -1,5 +1,5 @@
-Summary:	A user-friendly file manager and visual shell
-Summary(pl):	Midnight Commander - pow³oka wizualna
+Summary:	ISO Master: graphical CD image editor.
+Summary(pl):	ISO Master: graficzny edytor obrazów p³yt.
 Name:		isomaster
 Version:	0.4
 Release:	0.1
