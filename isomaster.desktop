@@ -1,7 +1,7 @@
 [Desktop Entry]
 Categories=GTK;AudioVideo;DiscBurning;
-Comment=Reading, modifying and writing ISO images.
-Comment[pl]=Czytanie, modyfikowanie i zapisywanie obrazów ISO.
+Comment=Reading, modifying and writing ISO images
+Comment[pl]=Czytanie, modyfikowanie i zapisywanie obrazów ISO
 Encoding=UTF-8
 Exec=isomaster
 Icon=cdrom_mount
