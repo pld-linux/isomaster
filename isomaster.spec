@@ -1,9 +1,9 @@
-Summary:	ISO Master: graphical CD image editor.
+Summary:	ISO Master: graphical CD image editor
 Summary(pl):	ISO Master: graficzny edytor obrazów p³yt.
 Name:		isomaster
 Version:	0.4
 Release:	0.1
-License:	GPL2
+License:	GPL v2
 Group:		Applications/Shells
 Source0:	http://littlesvr.ca/isomaster/releases/%{name}-%{version}.tar.bz2
 # Source0-md5:	56d60c4bd37a287f936c2b9374f87c22
@@ -18,18 +18,18 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 
 %description
-ISO Master: graphical CD image editor.
-Used for reading, modifying and writing ISO images.
+ISO Master: graphical CD image editor. Used for reading, modifying and
+writing ISO images.
 
 %description -l pl
-ISO Master: graficzny edytor obrazów p³yt.
-U¿ywany do czytania, modyfikowania i zapisywania obrazów ISO. 
+ISO Master: graficzny edytor obrazów p³yt. U¿ywany do czytania,
+modyfikowania i zapisywania obrazów ISO.
 
 %prep
 %setup -q
+%{__sed} -i -e 's#/usr/local#/usr#' Makefile
 
 %build
-sed -i -e 's#/usr/local#/usr#' Makefile
 %{__make}
 
 %install
