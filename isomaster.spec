@@ -1,5 +1,5 @@
 Summary:	ISO Master: graphical CD image editor
-Summary(pl):	ISO Master: graficzny edytor obrazów p³yt.
+Summary(pl):	ISO Master: graficzny edytor obrazów p³yt
 Name:		isomaster
 Version:	0.4
 Release:	0.1
@@ -15,7 +15,6 @@ BuildRequires:	gtk+2-devel
 BuildRequires:	sed >= 4.0
 Requires:	file
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 ISO Master: graphical CD image editor. Used for reading, modifying and
