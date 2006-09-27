@@ -7,6 +7,7 @@ License:	GPL2
 Group:		Applications/Shells
 Source0:	http://littlesvr.ca/isomaster/releases/%{name}-%{version}.tar.bz2
 # Source0-md5:	56d60c4bd37a287f936c2b9374f87c22
+Source1:	%{name}.desktop
 URL:		http://littlesvr.ca/isomaster/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -32,9 +33,11 @@ sed -i -e 's#/usr/local#/usr#' Makefile
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_desktopdir}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -46,3 +49,4 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_datadir}/isomaster
 %dir %{_datadir}/isomaster/icons
 %{_datadir}/isomaster/icons/*
+%{_desktopdir}/%{name}.desktop
