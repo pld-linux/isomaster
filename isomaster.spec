@@ -12,7 +12,6 @@ URL:		http://littlesvr.ca/isomaster/
 BuildRequires:	gtk+2-devel >= 2.0
 BuildRequires:	pkgconfig
 BuildRequires:	sed >= 4.0
-BuildRequires:	libpthread-stubs
 Requires:	file
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
