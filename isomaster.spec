@@ -30,7 +30,7 @@ modyfikowania i zapisywania obrazów ISO.
 %build
 %{__make} \
 	CC="%{__cc}" \
-	GLOBALFLAGS="%{rpmcflags} -D_FILE_OFFSET_BITS=64 -Wall"
+	CPPFLAGS="%{rpmcflags} -D_FILE_OFFSET_BITS=64 -Wall"
 
 %install
 rm -rf $RPM_BUILD_ROOT
