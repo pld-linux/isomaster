@@ -1,5 +1,5 @@
 Summary:	ISO Master: graphical CD image editor
-Summary(pl):	ISO Master - graficzny edytor obrazÛw p≥yt
+Summary(pl.UTF-8):   ISO Master - graficzny edytor obraz√≥w p≈Çyt
 Name:		isomaster
 Version:	0.7
 Release:	0.1
@@ -19,9 +19,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 ISO Master: graphical CD image editor. Used for reading, modifying and
 writing ISO images.
 
-%description -l pl
-ISO Master - graficzny edytor obrazÛw p≥yt. S≥uøy do czytania,
-modyfikowania i zapisywania obrazÛw ISO.
+%description -l pl.UTF-8
+ISO Master - graficzny edytor obraz√≥w p≈Çyt. S≈Çu≈ºy do czytania,
+modyfikowania i zapisywania obraz√≥w ISO.
 
 %prep
 %setup -q
