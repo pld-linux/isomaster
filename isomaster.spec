@@ -1,5 +1,5 @@
 Summary:	ISO Master: graphical CD image editor
-Summary(pl.UTF-8):   ISO Master - graficzny edytor obrazów płyt
+Summary(pl.UTF-8):	ISO Master - graficzny edytor obrazów płyt
 Name:		isomaster
 Version:	0.7
 Release:	0.1
