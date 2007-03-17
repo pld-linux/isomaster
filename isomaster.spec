@@ -1,12 +1,12 @@
 Summary:	ISO Master: graphical CD image editor
 Summary(pl.UTF-8):	ISO Master - graficzny edytor obrazów płyt
 Name:		isomaster
-Version:	0.7
-Release:	0.1
+Version:	0.8
+Release:	1
 License:	GPL v2
 Group:		Applications/Shells
 Source0:	http://littlesvr.ca/isomaster/releases/%{name}-%{version}.tar.bz2
-# Source0-md5:	ecc0a033211bb61c18a0bdde5612f2c9
+# Source0-md5:	99935f8f623ccd5357efaca5b55badb1
 Source1:	%{name}.desktop
 URL:		http://littlesvr.ca/isomaster/
 BuildRequires:	gtk+2-devel >= 2.0
@@ -30,7 +30,7 @@ modyfikowania i zapisywania obrazów ISO.
 %build
 %{__make} \
 	CC="%{__cc}" \
-	CPPFLAGS="%{rpmcflags} -D_FILE_OFFSET_BITS=64 -Wall"
+	GLOBALFLAGS="%{rpmcflags} -D_FILE_OFFSET_BITS=64 -Wall"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -38,7 +38,6 @@ install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_mandir}/man1}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
-mv $RPM_BUILD_ROOT/usr/man/man1/isomaster.1.gz $RPM_BUILD_ROOT%{_mandir}/man1
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 %find_lang %{name} --all-name
