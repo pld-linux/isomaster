@@ -13,6 +13,8 @@ BuildRequires:	gtk+2-devel >= 2.0
 BuildRequires:	pkgconfig
 BuildRequires:	sed >= 4.0
 Requires:	file
+# sr@Latn vs. sr@latin
+Conflicts:	glibc-misc < 6:2.7
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -40,6 +42,8 @@ install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_mandir}/man1}
 	DESTDIR=$RPM_BUILD_ROOT
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
+
+rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/sr@Latn
 %find_lang %{name} --all-name
 
 %clean
