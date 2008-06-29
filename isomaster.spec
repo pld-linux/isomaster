@@ -1,12 +1,12 @@
 Summary:	ISO Master: graphical CD image editor
 Summary(pl.UTF-8):	ISO Master - graficzny edytor obrazów płyt
 Name:		isomaster
-Version:	1.3.1
+Version:	1.3.2
 Release:	1
 License:	GPL v2
 Group:		Applications/Shells
 Source0:	http://littlesvr.ca/isomaster/releases/%{name}-%{version}.tar.bz2
-# Source0-md5:	e86102919105662063ac294befe18472
+# Source0-md5:	1110ec1835f17c7a14d295fa1068131c
 Source1:	%{name}.desktop
 URL:		http://littlesvr.ca/isomaster/
 BuildRequires:	gettext-devel
