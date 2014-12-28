@@ -9,7 +9,7 @@ Source0:	http://littlesvr.ca/isomaster/releases/%{name}-%{version}.tar.bz2
 # Source0-md5:	ba7b44303979fd193df04b8f5f7ce4f8
 Source1:	%{name}.desktop
 URL:		http://littlesvr.ca/isomaster/
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gtk+2-devel >= 2.0
 BuildRequires:	pkgconfig
 BuildRequires:	sed >= 4.0
